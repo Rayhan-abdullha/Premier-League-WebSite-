@@ -1,0 +1,16 @@
+.team-bg {
+    background-color: #37003c
+}
+.site-name h2 {
+    position: absolute;
+    top: 0;
+    color: #fff;
+    font-size: 40px;
+    margin-top: 195px;
+    font-weight: 700;
+}
+.site-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

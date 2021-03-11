@@ -1,0 +1,17 @@
+.single-team img {
+    width: 100%;
+}
+.single-team {
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: 1px solid #ddd
+}
+button a {
+    
+}
+button a:hover {
+    text-decoration: none;
+}

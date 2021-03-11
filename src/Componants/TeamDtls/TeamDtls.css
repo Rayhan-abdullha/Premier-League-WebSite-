@@ -1,0 +1,92 @@
+.details-area {
+    background-color: #37003c;
+}
+.team-logo img {
+    position: absolute;
+    width: 260px;
+    top: 5%;
+}
+.banner {
+    height: 350px;
+    overflow: hidden;
+}
+.banner img {
+    width: 100%;
+}
+.team-dtls {
+    font-weight: 600;
+    padding-left: 20px;
+}
+.team-info {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 245px;
+    background-color: #9e0032
+}
+.player-img {
+    width: 380px;
+    float: right;
+}
+.player-img img {
+    width: 100%;
+}
+.team-content {
+    padding: 25px 0 35px 0;
+}
+.team-content p {
+    text-align: justify;
+}
+.social-icon ul {
+    margin: 0;
+    padding: 0;
+}
+.social-icon ul li {
+    display: inline-block;
+    margin: 0 -40px;
+}
+
+.social-icon img {
+    width: 40%;
+}
+
+.social-icon ul {
+    text-align: center;
+}
+
+.social-icon {
+    padding-bottom: 40px;
+}
+
+/* Responsive */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .team-info {
+        height: auto
+    }
+    .team-dtls {
+        
+        margin-bottom: 15px;
+    }
+    .player-img {
+        width: 100%;
+        padding-bottom: 14px;
+    }
+    .player-details {
+        padding: 0 20px;
+    }
+    .single-team img {
+        width: 47%;
+    }
+    .banner img {
+        width: 100%;
+        height: 350px;
+    }
+    .team-dtls {
+        padding-top: 20px;
+    }
+}
