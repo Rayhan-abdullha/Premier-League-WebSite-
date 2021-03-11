@@ -6,21 +6,18 @@ import {faFlag, faFutbol, faPodcast, faTransgender } from '@fortawesome/free-sol
 
 const TeamDtls = () => {
     const {teamId} = useParams();
-    const [team, setTeam] = useState([
-        
-    ])
+    const [team, setTeam] = useState([])
     const {strStadiumThumb,strCountry, strTeam, strTeamBadge, strSport, strGender, intFormedYear} = team;
     useEffect( () => {
         const url = `https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${teamId}`
         fetch(url)
         .then(res => res.json())
         .then(data => setTeam(data.teams[0]))
-    },[])
+    },[teamId])
 
     let showPic;
-    if (strGender == 'Female') {
+    if (strGender === 'Female') {
         showPic = <img src="/image/female.png" alt="not found"/>
-        
     } else {
         showPic = <img src="/image/male.png" alt="not found"/>
     }
@@ -59,9 +56,9 @@ const TeamDtls = () => {
                     </div>
                     <div className="social-icon">
                         <ul>
-                            <li><a href="https://www.facebook.com/goal" target="_blank"><img src="/image/Facebook.png" alt="notFound"/></a></li>
-                            <li><a href="https://twitter.com/SportsManiaUSA" target="_blank"><img src="/image/Twitter.png" alt="notFound"/></a></li>
-                            <li><a href="https://www.youtube.com/user/goal" target="_blank"><img src="/image/YouTube.png" alt="notFound"/></a></li>
+                            <li><a href="https://www.facebook.com/goal"><img src="/image/Facebook.png" alt="notFound"/></a></li>
+                            <li><a href="https://twitter.com/SportsManiaUSA"><img src="/image/Twitter.png" alt="notFound"/></a></li>
+                            <li><a href="https://www.youtube.com/user/goal"><img src="/image/YouTube.png" alt="notFound"/></a></li>
                         </ul>
                     </div>
                 </div>

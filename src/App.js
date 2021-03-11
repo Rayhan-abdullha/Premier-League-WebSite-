@@ -8,16 +8,13 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
 } from "react-router-dom";
 import Navigation from './Componants/Navigation/Navigation';
-import { useState } from 'react';
 
 
 function App() {
   return (
     <div className="App">
-      
       <Router>
           
           <Switch>
